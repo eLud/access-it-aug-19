@@ -176,7 +176,15 @@ struct Dog {
 class Animal {
 
     let name: String
-    var age: Int
+    var age: Int {
+        willSet {
+            print("Age will change now \(age), new value is \(newValue)")
+        }
+
+        didSet {
+            print("Age did change now : \(age), was \(oldValue)")
+        }
+    }
 
     init(name: String, age: Int = 0) {
         self.name = name
@@ -219,3 +227,44 @@ let myDog2 = Dog(name: "Brutus", age: 5)
 
 myDog.bark()
 myDog2.get(that: "Baton")
+
+
+
+struct Point {
+    let x: Float
+    let y: Float
+}
+
+struct Size {
+    let width: Float
+    let height: Float
+}
+
+struct Rect {
+    let origin: Point
+    let size: Size
+
+    var center: Point {
+        get {
+            let centerX = origin.x + size.width / 2
+            let centerY = origin.y + size.height / 2
+            return Point(x: centerX, y: centerY)
+        }
+
+//        set {
+//            origin.x = newValue.x - size.width / 2
+//            origin.y = newValue.y - size.height / 2
+//        }
+    }
+}
+
+
+let position = Point(x: 0, y: 0)
+let size = Size(width: 10, height: 10)
+let square = Rect(origin: position, size: size)
+
+square.center
+
+
+
+

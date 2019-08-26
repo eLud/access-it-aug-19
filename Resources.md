@@ -8,3 +8,5 @@
 [Swift Cheat Sheet](https://github.com/reinder42/SwiftCheatsheet)
 
 [Swift is like Kotlin](http://nilhcem.com/swift-is-like-kotlin/)
+
+https://developer.apple.com/videos/play/wwdc2015/408/
