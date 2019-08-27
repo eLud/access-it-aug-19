@@ -33,15 +33,37 @@ class ViewController: UIViewController {
         
         // Error as optional
         try? failingFunction()
+            
+
+        //From code
+        let warning = WarningTextField(frame: CGRect.zero)
+        warning.searchString = "toto"
+        warning.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(warning)
+        warning.topAnchor.constraint(equalTo: commentTextField.bottomAnchor, constant: 100).isActive = true
+        warning.widthAnchor.constraint(equalToConstant: 250).isActive = true
+        warning.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        
+        //From XIB
+        let warnViewXIB = Bundle.main.loadNibNamed("WarningTextField", owner: self, options: nil)?.last as! UIView
+        warnViewXIB.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(warnViewXIB)
+        warnViewXIB.topAnchor.constraint(equalTo: warning.bottomAnchor, constant: 20).isActive = true
+         warnViewXIB.widthAnchor.constraint(equalToConstant: 250).isActive = true
+         warnViewXIB.heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
 
     @IBAction func visitedSwitchDidChange(_ sender: UISwitch) {
-        if sender.isOn {
-            reviewSlider.isEnabled = true
-            commentTextField.isEnabled = true
+        if !sender.isOn {
+            reviewSlider.isHidden = true
+            commentTextField.isHidden = true
         } else {
-            reviewSlider.isEnabled = false
-            commentTextField.isEnabled = false
+            reviewSlider.isHidden = false
+            commentTextField.isHidden = false
+        }
+        
+        UIView.animate(withDuration: 0.6) {
+            self.view.layoutIfNeeded()
         }
     }
     

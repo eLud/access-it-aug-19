@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33028A41231569A000065835 /* WarningTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33028A40231569A000065835 /* WarningTextField.xib */; };
+		33028A4323156A4B00065835 /* WarningTextFieldXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33028A4223156A4B00065835 /* WarningTextFieldXIB.swift */; };
 		3340B1BB231511BE000D1EEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3340B1BA231511BE000D1EEC /* AppDelegate.swift */; };
 		3340B1BD231511BE000D1EEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3340B1BC231511BE000D1EEC /* SceneDelegate.swift */; };
 		3340B1BF231511BE000D1EEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3340B1BE231511BE000D1EEC /* ViewController.swift */; };
@@ -15,9 +17,12 @@
 		3340B1C7231511C2000D1EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3340B1C5231511C2000D1EEC /* LaunchScreen.storyboard */; };
 		3340B1CF23151EF0000D1EEC /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3340B1CE23151EF0000D1EEC /* Restaurant.swift */; };
 		3340B1D123151EFD000D1EEC /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3340B1D023151EFD000D1EEC /* Directory.swift */; };
+		335504B6231561BB00AB0096 /* WarningTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335504B5231561BB00AB0096 /* WarningTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33028A40231569A000065835 /* WarningTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarningTextField.xib; sourceTree = "<group>"; };
+		33028A4223156A4B00065835 /* WarningTextFieldXIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningTextFieldXIB.swift; sourceTree = "<group>"; };
 		3340B1B7231511BE000D1EEC /* Resto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3340B1BA231511BE000D1EEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3340B1BC231511BE000D1EEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		3340B1C8231511C2000D1EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3340B1CE23151EF0000D1EEC /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		3340B1D023151EFD000D1EEC /* Directory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Directory.swift; sourceTree = "<group>"; };
+		335504B5231561BB00AB0096 /* WarningTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33028A44231576B400065835 /* WarningView */ = {
+			isa = PBXGroup;
+			children = (
+				335504B5231561BB00AB0096 /* WarningTextField.swift */,
+				33028A4223156A4B00065835 /* WarningTextFieldXIB.swift */,
+				33028A40231569A000065835 /* WarningTextField.xib */,
+			);
+			path = WarningView;
+			sourceTree = "<group>";
+		};
 		3340B1AE231511BE000D1EEC = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +76,7 @@
 		3340B1B9231511BE000D1EEC /* Resto */ = {
 			isa = PBXGroup;
 			children = (
+				33028A44231576B400065835 /* WarningView */,
 				3340B1D223151F50000D1EEC /* Models */,
 				3340B1BA231511BE000D1EEC /* AppDelegate.swift */,
 				3340B1BC231511BE000D1EEC /* SceneDelegate.swift */,
@@ -139,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33028A41231569A000065835 /* WarningTextField.xib in Resources */,
 				3340B1C7231511C2000D1EEC /* LaunchScreen.storyboard in Resources */,
 				3340B1C4231511C2000D1EEC /* Assets.xcassets in Resources */,
 				3340B1C2231511BE000D1EEC /* Main.storyboard in Resources */,
@@ -153,7 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3340B1CF23151EF0000D1EEC /* Restaurant.swift in Sources */,
+				33028A4323156A4B00065835 /* WarningTextFieldXIB.swift in Sources */,
 				3340B1BF231511BE000D1EEC /* ViewController.swift in Sources */,
+				335504B6231561BB00AB0096 /* WarningTextField.swift in Sources */,
 				3340B1BB231511BE000D1EEC /* AppDelegate.swift in Sources */,
 				3340B1BD231511BE000D1EEC /* SceneDelegate.swift in Sources */,
 				3340B1D123151EFD000D1EEC /* Directory.swift in Sources */,
