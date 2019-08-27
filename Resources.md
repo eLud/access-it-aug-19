@@ -9,4 +9,6 @@
 
 [Swift is like Kotlin](http://nilhcem.com/swift-is-like-kotlin/)
 
-https://developer.apple.com/videos/play/wwdc2015/408/
+[Protocol Oriented Programming](https://developer.apple.com/videos/play/wwdc2015/408/)
+
+[Child view controllers](https://www.swiftbysundell.com/basics/child-view-controllers)
