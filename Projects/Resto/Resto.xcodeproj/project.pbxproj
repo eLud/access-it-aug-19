@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33028A41231569A000065835 /* WarningTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33028A40231569A000065835 /* WarningTextField.xib */; };
 		33028A4323156A4B00065835 /* WarningTextFieldXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33028A4223156A4B00065835 /* WarningTextFieldXIB.swift */; };
+		33028A4623157B7A00065835 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33028A4523157B7A00065835 /* DetailsViewController.swift */; };
 		3340B1BB231511BE000D1EEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3340B1BA231511BE000D1EEC /* AppDelegate.swift */; };
 		3340B1BD231511BE000D1EEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3340B1BC231511BE000D1EEC /* SceneDelegate.swift */; };
 		3340B1BF231511BE000D1EEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3340B1BE231511BE000D1EEC /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		33028A40231569A000065835 /* WarningTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarningTextField.xib; sourceTree = "<group>"; };
 		33028A4223156A4B00065835 /* WarningTextFieldXIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningTextFieldXIB.swift; sourceTree = "<group>"; };
+		33028A4523157B7A00065835 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		3340B1B7231511BE000D1EEC /* Resto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3340B1BA231511BE000D1EEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3340B1BC231511BE000D1EEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				3340B1BC231511BE000D1EEC /* SceneDelegate.swift */,
 				3340B1BE231511BE000D1EEC /* ViewController.swift */,
 				3340B1C0231511BE000D1EEC /* Main.storyboard */,
+				33028A4523157B7A00065835 /* DetailsViewController.swift */,
 				3340B1C3231511C2000D1EEC /* Assets.xcassets */,
 				3340B1C5231511C2000D1EEC /* LaunchScreen.storyboard */,
 				3340B1C8231511C2000D1EEC /* Info.plist */,
@@ -173,6 +176,7 @@
 				3340B1CF23151EF0000D1EEC /* Restaurant.swift in Sources */,
 				33028A4323156A4B00065835 /* WarningTextFieldXIB.swift in Sources */,
 				3340B1BF231511BE000D1EEC /* ViewController.swift in Sources */,
+				33028A4623157B7A00065835 /* DetailsViewController.swift in Sources */,
 				335504B6231561BB00AB0096 /* WarningTextField.swift in Sources */,
 				3340B1BB231511BE000D1EEC /* AppDelegate.swift in Sources */,
 				3340B1BD231511BE000D1EEC /* SceneDelegate.swift in Sources */,
@@ -323,6 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7SGM6JEMA;
 				INFOPLIST_FILE = Resto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7SGM6JEMA;
 				INFOPLIST_FILE = Resto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

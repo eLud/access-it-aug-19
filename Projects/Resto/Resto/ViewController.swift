@@ -98,5 +98,14 @@ class ViewController: UIViewController {
         throw FormError.outOfRange
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "showLast" {
+            guard let destination = segue.destination as? DetailsViewController else { return }
+            destination.restaurantToDisplay = Directory.instance.restaurants.last
+        }
+        
+    }
+    
 }
 
